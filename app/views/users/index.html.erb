@@ -1,0 +1,7 @@
+<h1>ユーザー一覧</h1>
+
+<% @users.each do |user| %>
+<%= attachment_image_tag user, :profile_image_id, format: 'jpeg', fallback: "no-user-image-square.jpg", size: "60x60" %>
+<%= user.name %>
+
+<% end %>
